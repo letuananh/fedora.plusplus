@@ -6,4 +6,4 @@ yum install -y wget
 cd /etc/yum.repos.d
 wget http://repos.fedorapeople.org/repos/spot/chromium-stable/fedora-chromium-stable.repo
 
-yum install -y chromium
+yum install -y --nogpgcheck chromium
