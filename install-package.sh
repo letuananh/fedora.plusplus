@@ -8,3 +8,4 @@ yum localinstall -y --nogpgcheck http://download1.rpmfusion.org/free/fedora/rpmf
 ./script/install-multimedia.sh
 ./script/install-util.sh
 ./script/install-dev.sh
+./script/install-edu.sh
