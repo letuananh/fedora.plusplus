@@ -1,0 +1,53 @@
+#!/usr/bin/sh
+
+########################################################################
+# CONFIGURATION
+########################################################################
+TEMPLATE_FOLDER=~/Templates
+PYTHON_TEMPLATE=${TEMPLATE_FOLDER}/"Python Code.py"
+SHELL_TEMPLATE=${TEMPLATE_FOLDER}/"Bash Shellscript.sh"
+TXT_TEMPLATE=${TEMPLATE_FOLDER}/"Empty Text File"
+
+########################################################################
+# UTILITIES FUNCTIONS
+########################################################################
+
+function create {
+	TEMPLATE="$1"
+	FULLPATH="$2"
+	if [ -f ${FILENAME} ]; then
+		echo "File exist, please select another filename"
+	else
+		if cp "${TEMPLATE}" "${FULLPATH}" ; then
+			echo "File [${FULLPATH}] has been created from the template [${TEMPLATE}]"
+		else
+			echo "ERR"
+		fi
+	fi
+}
+
+function print_usage {
+	echo "Usage:"
+	echo "$0 [filename]"
+	echo "Support type: "
+	echo "  + Python: filename.py"
+	echo "  + Shell: filename.sh"
+}
+
+########################################################################
+# MAIN
+########################################################################
+FILENAME=$1
+FULLPATH="`pwd`/${FILENAME}"
+
+if [ $# -ne 1 ]; then
+	print_usage
+elif [[ "${FILENAME}" = *'.py' ]]; then
+	create "${PYTHON_TEMPLATE}" "${FULLPATH}"
+elif [[ "${FILENAME}" = *'.sh' ]]; then
+	create "${SHELL_TEMPLATE}" "${FULLPATH}"
+elif [[ "${FILENAME}" = *'.txt' ]]; then
+	create "${TXT_TEMPLATE}" "${FULLPATH}"
+else
+	print_usage
+fi
