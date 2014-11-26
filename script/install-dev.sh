@@ -7,3 +7,5 @@ cd /etc/yum.repos.d
 wget http://repos.fedorapeople.org/repos/spot/chromium-stable/fedora-chromium-stable.repo
 
 yum install -y --nogpgcheck chromium
+
+yum install -y python-tools
