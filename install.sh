@@ -52,7 +52,7 @@ fi
 
 echo "Copying files to bin folder"
 cp ./res/bin/* "${BIN_DIR}" -vu
-chmod u+x "${BIN_DIR}/*"
+chmod u+x "${BIN_DIR}"/*
 
 # TODO: Add it to PATH
 inject 'export PATH=~/bin:$PATH' ~/.bashrc
@@ -67,4 +67,8 @@ fi
 echo "Copying fonts to home folder"
 cp ./res/Fonts/SourceCodePro/*.ttf "$FONT_DIR" -vu
 
-su -c "./install-package.sh"
+if [[ "$1" != "NP" ]]; then
+	su -c "./install-package.sh"
+else
+	echo "No package mode activated"
+fi
