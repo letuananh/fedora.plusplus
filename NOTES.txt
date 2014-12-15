@@ -1,0 +1,9 @@
+# Restart Network Manager service
+systemctl restart NetworkManager
+
+# Network Manager tool
+man nmcli-examples
+
+# View running processes
+ps -A
+# alternative: `pstree` or `top`
