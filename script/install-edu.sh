@@ -1,5 +1,6 @@
 #!/usr/bin/sh
 
+yum install -y octave R
 yum -y install texlive texlive-latex texlive-xetex
 yum -y install texlive-collection-latex
 yum -y install texlive-collection-latexrecommended

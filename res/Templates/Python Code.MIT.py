@@ -29,7 +29,7 @@ This is a template for a Python3 application
 __author__ = "<author-name>"
 __copyright__ = "Copyright <year>, <project-name>"
 __credits__ = [ "Author 1", "Author 2" ]
-__license__ = "GPL"
+__license__ = "MIT"
 __version__ = "0.1"
 __maintainer__ = "<author-name>"
 __email__ = "<author-email>"
