@@ -1,5 +1,10 @@
 #!/usr/bin/sh
 
-yum install -y gstreamer-plugins-bad gstreamer-plugins-ugly gstreamer-ffmpeg vlc musescore tuxguitar gimp inkscape darktable audio-convert-mod lame mac faac faad easytag kid3-qt ffmpeg
+# Photography, multimedia
+yum install -y gstreamer-plugins-bad gstreamer-plugins-ugly gstreamer-ffmpeg vlc gimp inkscape darktable audio-convert-mod lame mac faac faad easytag kid3-qt ffmpeg
+
+# Musical software
+yum install -y musescore tuxguitar 
+
 # A nice light-weight image editor
 yum install -y pinta
