@@ -7,4 +7,7 @@ yum install -y gstreamer-plugins-bad gstreamer-plugins-ugly gstreamer-ffmpeg vlc
 yum install -y musescore tuxguitar 
 
 # A nice light-weight image editor
-yum install -y pinta
+yum install -y pinta firefox
+
+# Sound lib
+yum install -y alsa-lib.i686

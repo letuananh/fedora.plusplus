@@ -5,11 +5,12 @@ yum install -y llvm gcc gcc-c++ cmake geany wget tkinter gtk2-devel qt-devel dco
 
 # Install subversion software
 yum install -y svn rapidsvn meld
-# Install python packages
-yum install -y python-tools python-pip
 
 # Install SQLite database management tool
 yum install -y sqliteman
+
+# Install python packages
+yum install -y python-tools python-pip python-lxml python3-lxml
 
 # Install Chromium
 yum install -y wget
