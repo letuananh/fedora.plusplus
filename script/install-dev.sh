@@ -8,6 +8,9 @@ yum install -y svn rapidsvn meld
 # Install python packages
 yum install -y python-tools python-pip
 
+# Install SQLite database management tool
+yum install -y sqliteman
+
 # Install Chromium
 yum install -y wget
 cd /etc/yum.repos.d
