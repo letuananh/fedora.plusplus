@@ -1,6 +1,6 @@
 #!/usr/bin/sh
 
-yum install -y octave R
+yum install -y octave R freemind dia
 
 # Install LaTeX packages
 yum -y install texlive texlive-latex texlive-xetex
