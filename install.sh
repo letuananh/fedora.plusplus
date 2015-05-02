@@ -10,7 +10,7 @@ BIN_DIR=~/bin
 ########################################################################
 
 ##
-# Inject a line into a text file
+# Append a line at the end of a text file if it doesn't exist
 # ARG1 ($1): String to inject
 # ARG2 ($2): Path to file
 ##
