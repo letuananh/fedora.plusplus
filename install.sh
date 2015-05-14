@@ -56,6 +56,8 @@ chmod u+x "${BIN_DIR}"/*
 
 # TODO: Add it to PATH
 inject 'export PATH=~/bin:$PATH' ~/.bashrc
+inject "alias tcm='texcount ./main.tex | head'" ~/.bashrc
+
 
 # Install fonts
 if [ ! -d "$FONT_DIR" ]; then

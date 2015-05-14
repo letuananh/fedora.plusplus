@@ -1,0 +1,22 @@
+#!/usr/bin/sh
+
+while true; do 
+	# Generate PDF file
+	pdflatex main.tex
+	bibtex main
+	pdflatex main.tex
+	pdflatex main.tex
+
+	# cleaning process
+	rm main.aux
+	rm main.bbl
+	rm main.log
+	rm main.out
+	rm main.blg
+	rm main.toc
+
+	# Display PDF file
+	evince main.pdf
+done;
+
+
