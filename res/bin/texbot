@@ -1,11 +1,23 @@
 #!/usr/bin/sh
 
 while true; do 
+	# cleaning old tmp files
+	rm main.aux 2> /dev/null
+	rm main.bbl 2> /dev/null
+	rm main.log 2> /dev/null
+	rm main.out 2> /dev/null
+	rm main.blg 2> /dev/null
+	rm main.toc 2> /dev/null
+
+
 	# Generate PDF file
-	pdflatex main.tex
+	pdflatex main.tex  | grep 'LaTeX Warning:'
 	bibtex main
-	pdflatex main.tex
-	pdflatex main.tex
+	pdflatex main.tex  | grep 'LaTeX Warning:'
+	echo ""
+	echo "Final generation .............................."
+	echo ""
+	pdflatex main.tex | grep 'LaTeX Warning:'
 
 	# cleaning process
 	rm main.aux
