@@ -27,6 +27,8 @@ while true; do
 	rm main.blg
 	rm main.toc
 
+	texcount main.tex | head
+
 	# Display PDF file
 	evince main.pdf
 done;
