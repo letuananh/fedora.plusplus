@@ -1,7 +1,12 @@
 #!/usr/bin/sh
 
 # Install C-dev tools
-yum install -y llvm gcc gcc-c++ cmake geany wget tkinter gtk2-devel qt-devel dconf-editor boost git emacs  httpd httpd-devel screen
+yum install -y llvm gcc gcc-c++ cmake geany wget tkinter gtk2-devel qt-devel dconf-editor boost git emacs  httpd httpd-devel screen lynx
+
+# Install ruby development tools
+yum install -y gcc ruby ruby-devel rubygems
+gem install jekyll -V
+gem install therubyracer -V
 
 # Install subversion software
 yum install -y svn rapidsvn meld
