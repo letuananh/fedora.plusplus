@@ -1,0 +1,66 @@
+\documentclass[]{beamer}
+
+\usetheme{CambridgeUS}
+\usepackage{relsize}
+
+\title[My short fancy talk]{{\smaller This is} \\a very fancy talk \\ {\smaller that I'm going to give}}
+%\subtitle[]{Blah blah blah}
+\date[1945-10-24]{24 October 1945}
+\author[Me]{A Fancy Name of Me\\{\small A member of: Organisation X}}
+\institute[]{Address line 1\\
+Address line 2
+}
+
+\AtBeginSection[]
+{
+\begin{frame}[noframenumbering]{Table of Contents}
+\tableofcontents[currentsection]
+\end{frame}
+}
+
+\begin{document}
+
+\begin{frame}
+\titlepage
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Food Fetish}
+
+\begin{frame}
+\frametitle{Food that I like}
+\begin{itemize}
+\item Banana
+\pause \item Orange
+\pause \item Mango
+\end{itemize}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Control Freaks}
+
+%----------------------------
+\begin{frame}
+\frametitle{Sample section}
+
+\begin{block}{Rule \#1}
+I'm always right.
+\end{block}
+\pause %---
+\begin{block}{Rule \#2}
+If you think that I'm wrong, see rule \#1.
+\end{block}
+
+\end{frame}
+
+\section{Final}
+
+%----------------------------
+\begin{frame}\frametitle{Thank you}
+\begin{center} \usebeamerfont*{frametitle} \usebeamercolor[fg]{frametitle} \huge Thank you. 
+Now go away, shoo shoo!
+\end{center}
+\end{frame}
+
+\end{document}

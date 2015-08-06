@@ -7,6 +7,7 @@ TEMPLATE_FOLDER=~/Templates
 PYTHON_TEMPLATE=${TEMPLATE_FOLDER}/"Python Code.py"
 SHELL_TEMPLATE=${TEMPLATE_FOLDER}/"Bash Shellscript.sh"
 TXT_TEMPLATE=${TEMPLATE_FOLDER}/"Empty Text File"
+TEXP_TEMPLATE=${TEMPLATE_FOLDER}/"LaTeX Presentation Slides"
 
 ########################################################################
 # UTILITIES FUNCTIONS
@@ -30,8 +31,9 @@ function print_usage {
 	echo "Usage:"
 	echo "$0 [filename]"
 	echo "Support type: "
-	echo "  + Python: filename.py"
-	echo "  + Shell: filename.sh"
+	echo "  + Python            : filename.py"
+	echo "  + Shell             : filename.sh"
+	echo "  + LaTeX Presentation: filename.tex"
 }
 
 ########################################################################
@@ -48,6 +50,8 @@ elif [[ "${FILENAME}" = *'.sh' ]]; then
 	create "${SHELL_TEMPLATE}" "${FULLPATH}"
 elif [[ "${FILENAME}" = *'.txt' ]]; then
 	create "${TXT_TEMPLATE}" "${FULLPATH}"
+elif [[ "${FILENAME}" = *'.tex' ]]; then
+	create "${TEXP_TEMPLATE}" "${FULLPATH}"
 else
 	print_usage
 fi
