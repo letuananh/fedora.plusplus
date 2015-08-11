@@ -69,8 +69,14 @@ fi
 echo "Copying fonts to home folder"
 cp ./res/Fonts/SourceCodePro/*.ttf "$FONT_DIR" -vu
 
+
 if [[ "$1" != "NP" ]]; then
-	su -c "./install-package.sh"
+    if [ "$EUID" -ne 0 ]
+        then echo "Root permission is required to install packages"
+        exit
+    else
+        su -c "./install-package.sh"
+    fi
 else
-	echo "No package mode activated"
+    echo "No package mode activated"
 fi
