@@ -8,7 +8,7 @@ PYTHON_TEMPLATE=${TEMPLATE_FOLDER}/"Python Code.py"
 SHELL_TEMPLATE=${TEMPLATE_FOLDER}/"Bash Shellscript.sh"
 TXT_TEMPLATE=${TEMPLATE_FOLDER}/"Empty Text File"
 TEXP_TEMPLATE=${TEMPLATE_FOLDER}/"LaTeX Presentation Slides"
-
+HTML_TEMPLATE=${TEMPLATE_FOLDER}/"XHTML 1.1.htm"
 ########################################################################
 # UTILITIES FUNCTIONS
 ########################################################################
@@ -52,6 +52,8 @@ elif [[ "${FILENAME}" = *'.txt' ]]; then
 	create "${TXT_TEMPLATE}" "${FULLPATH}"
 elif [[ "${FILENAME}" = *'.tex' ]]; then
 	create "${TEXP_TEMPLATE}" "${FULLPATH}"
+elif [[ "${FILENAME}" = *'.html' ]]; then
+	create "${HTML_TEMPLATE}" "${FULLPATH}"
 else
 	print_usage
 fi

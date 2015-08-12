@@ -15,7 +15,7 @@ yum install -y svn rapidsvn meld
 yum install -y sqliteman
 
 # Install python packages
-yum install -y python-tools python-pip python-lxml python3-lxml
+yum install -y python-tools python-pip python-lxml python3-lxml python3-pip
 
 # Install Chromium
 yum install -y wget
