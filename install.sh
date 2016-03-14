@@ -56,6 +56,7 @@ chmod u+x "${BIN_DIR}"/*
 
 # TODO: Add it to PATH
 inject 'export PATH=~/bin:$PATH' ~/.bashrc
+inject "alias p3='python3 -m'" ~/.bashrc
 inject "alias tcm='texcount ./main.tex | head'" ~/.bashrc
 
 
