@@ -6,7 +6,7 @@ This is a template for a Python3 application
 @author: <author-name>
 '''
 
-# Copyright (c) <year>, Author Name <authorname@domain.com>
+# Copyright (c) <year>, <author-name> <<author-email>>
 #
 #Permission is hereby granted, free of charge, to any person obtaining a copy
 #of this software and associated documentation files (the "Software"), to deal
@@ -28,7 +28,7 @@ This is a template for a Python3 application
 
 __author__ = "<author-name>"
 __copyright__ = "Copyright <year>, <project-name>"
-__credits__ = [ "Author 1", "Author 2" ]
+__credits__ = ["Author 1", "Author 2"]
 __license__ = "MIT"
 __version__ = "0.1"
 __maintainer__ = "<author-name>"
@@ -38,8 +38,8 @@ __status__ = "Prototype"
 ########################################################################
 
 def main():
-	print("Hello World")
-	pass
+    print("Hello World")
+    pass
 
 if __name__ == "__main__":
-	main()
+    main()

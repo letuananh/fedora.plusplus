@@ -58,6 +58,19 @@ chmod u+x "${BIN_DIR}"/*
 inject 'export PATH=~/bin:$PATH' ~/.bashrc
 inject "alias p3='python3 -m'" ~/.bashrc
 inject "alias tcm='texcount ./main.tex | head'" ~/.bashrc
+inject "export TERM='xterm-256color'" ~/.bashrc
+
+inject "escape ^Zz" ~/.screenrc
+inject "term screen-256color" ~/.screenrc
+
+# Patch emacs
+inject "(setq-default indent-tabs-mode nil)" ~/.emacs
+inject "(setq tab-width 4)" ~/.emacs
+
+inject "(require 'ido)" ~/.emacs
+inject "(setq ido-enable-flex-matching t)" ~/.emacs
+inject "(setq ido-everywhere t)" ~/.emacs
+inject "(ido-mode 1)" ~/.emacs
 
 
 # Install fonts

@@ -23,4 +23,7 @@ cd /etc/yum.repos.d
 wget http://repos.fedorapeople.org/repos/spot/chromium-stable/fedora-chromium-stable.repo
 yum install -y --nogpgcheck chromium
 
+yum install -y libpng12 libXext.i686 libX11.i686
 
+# prettify XML code
+yum install -y xmlstarlet
