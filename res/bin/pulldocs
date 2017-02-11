@@ -1,0 +1,28 @@
+#!/bin/bash
+
+DOC_LOC=~/docs
+PYTHON2_DOCS="python-2.7.13-docs-html.tar.bz2"
+PYTHON3_DOCS="python-3.5.2-docs-html.tar.bz2"
+SQLITE3_DOCS="sqlite-doc-3160200.zip"
+if [ ! -d "${DOC_LOC}" ]; then
+    echo "Creating ${DOC_LOC}"
+    mkdir ${DOC_LOC}
+fi
+
+function download_doc {
+    LOCAL="${DOC_LOC}/$1"
+    URL="$2"
+    if [ ! -f ${LOCAL} ]; then
+        wget -P ${DOC_LOC} ${URL}
+    else
+        echo "$1 has been downloaded"
+    fi
+}
+
+download_doc ${PYTHON3_DOCS} "https://docs.python.org/ftp/python/doc/3.5.2/python-3.5.2-docs-html.tar.bz2"
+download_doc ${PYTHON2_DOCS} "https://docs.python.org/2/archives/python-2.7.13-docs-html.tar.bz2"
+download_doc ${SQLITE3_DOCS} "https://www.sqlite.org/2017/sqlite-doc-3160200.zip"
+
+tar -xvf "${DOC_LOC}/${PYTHON3_DOCS}" -C ${DOC_LOC}
+tar -xvf "${DOC_LOC}/${PYTHON2_DOCS}" -C ${DOC_LOC}
+unzip "${DOC_LOC}/${SQLITE3_DOCS}" -d ${DOC_LOC}
