@@ -23,6 +23,9 @@ download_doc ${PYTHON3_DOCS} "https://docs.python.org/ftp/python/doc/3.5.2/pytho
 download_doc ${PYTHON2_DOCS} "https://docs.python.org/2/archives/python-2.7.13-docs-html.tar.bz2"
 download_doc ${SQLITE3_DOCS} "https://www.sqlite.org/2017/sqlite-doc-3160200.zip"
 
-tar -xvf "${DOC_LOC}/${PYTHON3_DOCS}" -C ${DOC_LOC}
-tar -xvf "${DOC_LOC}/${PYTHON2_DOCS}" -C ${DOC_LOC}
-unzip "${DOC_LOC}/${SQLITE3_DOCS}" -d ${DOC_LOC}
+tar -xkf "${DOC_LOC}/${PYTHON3_DOCS}" -C ${DOC_LOC} &> /dev/null
+tar -xkf "${DOC_LOC}/${PYTHON2_DOCS}" -C ${DOC_LOC} &> /dev/null
+unzip -foq "${DOC_LOC}/${SQLITE3_DOCS}" -d ${DOC_LOC}
+
+ls -lad ${DOC_LOC}/*/
+echo "Done!"
