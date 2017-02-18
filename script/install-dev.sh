@@ -1,15 +1,27 @@
 #!/usr/bin/sh
 
 # Install C-dev tools
-yum install -y llvm gcc gcc-c++ cmake geany wget tkinter gtk2-devel qt-devel dconf-editor boost git emacs  httpd httpd-devel screen lynx elinks
+yum install -y llvm gcc gcc-c++ cmake tkinter gtk2-devel qt-devel dconf-editor boost
+
+# Web development
+yum install -y httpd httpd-devel
+
+# Editor
+yum install -y emacs geany
+
+# Utilities
+yum install -y screen lynx elinks wget
+
+# prettify XML code
+yum install -y xmlstarlet
 
 # Install ruby development tools
 yum install -y gcc ruby ruby-devel rubygems
 gem install jekyll -V
 gem install therubyracer -V
 
-# Install subversion software
-yum install -y svn rapidsvn meld
+# Install version control softwares
+yum install -y svn rapidsvn meld git git-gui
 
 # Install SQLite database management tool
 yum install -y sqliteman
@@ -23,7 +35,6 @@ cd /etc/yum.repos.d
 wget http://repos.fedorapeople.org/repos/spot/chromium-stable/fedora-chromium-stable.repo
 yum install -y --nogpgcheck chromium
 
+# XML support
 yum install -y libpng12 libXext.i686 libX11.i686
 
-# prettify XML code
-yum install -y xmlstarlet
