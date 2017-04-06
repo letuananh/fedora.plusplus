@@ -6,3 +6,6 @@ yum install -y gnome-tweak-tool alacarte chromium grub-customizer
 
 # Partition editing tool
 yum install -y gparted  livecd-tools
+
+# support exfat format
+dnf install -y fuse-exfat
