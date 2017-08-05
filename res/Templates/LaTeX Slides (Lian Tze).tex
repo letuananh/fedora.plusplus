@@ -1,0 +1,69 @@
+\documentclass[xcolor={svgnames,dvipsnames,x11names}]{beamer}
+
+\usetheme{Warsaw}
+\usecolortheme[named=Maroon]{structure}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{mathpazo}
+\usepackage{FiraSans}
+\usepackage{inconsolata}
+
+\usepackage{expex}
+
+\author{Lian Tze}
+\title{Quick Beamer Example}
+\institute{KDU College, Penang}
+\date{8 March 2015}
+
+\begin{document}
+
+\begin{frame}
+\maketitle
+\end{frame}
+
+\section{Introduction}
+\subsection{Hello!}
+
+\begin{frame}
+\frametitle{Hello World!}
+
+This is my first presentation with \LaTeX.
+
+\begin{itemize}[<+->]
+\item Beamer has many features
+\item This is just a simple demo
+\end{itemize}
+\end{frame}
+
+\subsection{Maths}
+\begin{frame}
+\frametitle{Maths work, too}
+\begin{equation}
+y = ax^2 + bx + c
+\end{equation}
+\end{frame}
+
+\begin{frame}
+\frametitle{Interlinear Glosses}
+\ex
+\begingl
+\gla Some authors like four lines //
+\glb some {author -s} like four {line -s} //
+\glc some {author \textsc{-pl}} like four {line \textsc{-pl}}//
+\glft Some authors like an extra line for morpheme breaks. This is OK.//
+\endgl
+\xe
+\end{frame}
+
+\section{Conclusion}
+\begin{frame}
+\frametitle{It's Your Decision}
+\begin{itemize}
+\item Give \LaTeX\ a try
+\item You might hate it, you might love it
+\item Now that you've tried it, you can decide if it's for you
+\end{itemize}
+\end{frame}
+
+\end{document}
