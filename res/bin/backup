@@ -1,0 +1,11 @@
+#!/bin/bash
+
+BACKUP_DIR=~/BACKUP/repos
+PROJ=${PWD##*/}
+BRANCH=`git rev-parse --abbrev-ref HEAD`
+TS=`date "+%Y%m%d_%H%M%S"`
+ARCHIVE_NAME=${PROJ}-${BRANCH}-${TS}.zip
+
+echo "Backing up branch ${BRANCH} of ${PROJ} to ${BACKUP_DIR}/${ARCHIVE_NAME}"
+git archive --format zip --output ${BACKUP_DIR}/${ARCHIVE_NAME} ${BRANCH}
+ls ${BACKUP_DIR} -lh
