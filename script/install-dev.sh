@@ -2,6 +2,8 @@
 
 # Install C-dev tools
 dnf install -y llvm gcc gcc-c++ cmake tkinter gtk2-devel qt-devel dconf-editor boost
+# autotools
+dnf install -y autoconf automake
 
 # Web development
 dnf install -y httpd httpd-devel
@@ -21,13 +23,13 @@ gem install jekyll -V
 gem install therubyracer -V
 
 # Install version control softwares
-dnf install -y svn rapidsvn meld git git-gui
+dnf install -y meld git git-gui svn rapidsvn
 
 # Install SQLite database management tool
 dnf install -y sqliteman
 
 # Install python packages
-dnf install -y python-tools python-pip python-lxml python3-lxml python3-pip
+dnf install -y python-tools python-lxml python-pip  python3-lxml python3-pip
 
 # Install Chromium
 dnf install -y wget
