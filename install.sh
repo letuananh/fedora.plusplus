@@ -58,7 +58,9 @@ chmod u+x "${BIN_DIR}"/*
 inject 'export PATH=~/bin:$PATH' ~/.bashrc
 inject "alias p3='python3 -m'" ~/.bashrc
 inject "alias tcm='texcount ./main.tex | head'" ~/.bashrc
+inject "alias grepy='grep -R --include=*.py'" ~/.bashrc
 inject "export TERM='xterm-256color'" ~/.bashrc
+
 
 inject "escape ^Zz" ~/.screenrc
 inject "term screen-256color" ~/.screenrc
