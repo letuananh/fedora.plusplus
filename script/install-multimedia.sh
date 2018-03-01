@@ -13,4 +13,4 @@ dnf install -y musescore tuxguitar
 dnf install -y pinta firefox
 
 # Sound lib
-dnf install -y alsa-lib.i686
+dnf install -y alsa-lib pulseaudio-equalizer
