@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=My Application
+Name[ja_JP]=アプリ.desktop
+Icon=/home/user/local/appname/bin/icon.png
+Exec="/home/user/local/appname/bin/app.sh"
+Comment=This application is great
+Categories=Development;Utility;
+Terminal=false
