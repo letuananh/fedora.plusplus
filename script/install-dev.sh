@@ -19,8 +19,8 @@ dnf install -y xmlstarlet
 
 # Install ruby development tools
 dnf install -y gcc ruby ruby-devel rubygems
-gem install jekyll -V
-gem install therubyracer -V
+gem install -y jekyll -V
+gem install -y therubyracer -V
 
 # Install version control softwares
 dnf install -y meld git git-gui svn rapidsvn
