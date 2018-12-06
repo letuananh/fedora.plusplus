@@ -9,3 +9,5 @@ dnf install -y gparted  livecd-tools
 
 # support exfat format
 dnf install -y fuse-exfat
+
+dnf install -y gnome-shell-extension-pomodoro
