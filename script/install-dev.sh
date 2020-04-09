@@ -33,9 +33,9 @@ dnf install -y python-tools python-lxml python-pip  python3-lxml python3-pip
 
 # Install Chromium
 dnf install -y wget
-cd /etc/yum.repos.d
-wget http://repos.fedorapeople.org/repos/spot/chromium-stable/fedora-chromium-stable.repo
-dnf install -y --nogpgcheck chromium
+# cd /etc/yum.repos.d
+# wget http://repos.fedorapeople.org/repos/spot/chromium-stable/fedora-chromium-stable.repo
+# dnf install -y --nogpgcheck chromium
 
 # XML support
 dnf install -y libpng12 libXext.i686 libX11.i686
