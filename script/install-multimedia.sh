@@ -10,7 +10,7 @@ dnf install -y banshee gstreamer1-plugins-ugly
 dnf install -y musescore tuxguitar 
 
 # A nice light-weight image editor
-dnf install -y pinta firefox
+dnf install -y pinta
 
 # Sound lib
 dnf install -y alsa-lib pulseaudio-equalizer
