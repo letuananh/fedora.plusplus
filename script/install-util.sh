@@ -1,6 +1,6 @@
 #!/usr/bin/sh
 
-dnf install -y goldendict p7zip unrar filezilla anki comix gnugo
+dnf install -y goldendict p7zip unrar filezilla anki comix gnugo langpacks-{ja,zh_CN,zh_TW,vi}
 
 dnf install -y gnome-tweak-tool alacarte chromium grub-customizer
 
